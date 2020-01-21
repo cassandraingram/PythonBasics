@@ -1,41 +1,32 @@
 # calculator.py
 
-# create a function called add
-def add():
-	a = 1
-	b = 2
-	c = a + b
-	print("{} + {} = {}" .format(a, b, c))
-
-def add2(x, y):
+# add function adds two inputs
+def add(x, y): 
 	z = x + y
-	print("{} + {} = {}" .format(x, y, z))
 	return z
 
+#subtract function subtracts two inputs
 def subtract(x, y):
 	z = x - y
-	print("{} - {} = {}" .format(x, y, z))
 	return z
 
+# multiply function multiplies two inputs
 def multiply(x, y):
 	z = x * y
-	print("{} * {} = {}" .format(x, y, z))
 	return z
 
+# divide function divides two inputs
+def divide(x, y):
+	z = x / y
+	return z
 
-
-x = input("Enter a letter: ")
-print("You entered {}" .format(x))
-
-if x == "a":
-	add()
-elif x == "b":
-	d = add2(1, 2)
-	if d > 100:
-		print("This number is too high")
-elif x == "s":
-	d = subtract(20, -3)
-elif x == "m":
-	d = multiply(6, 5)
-else:
-	print("The {} command is not recognized." .format(x))
+# modulee calls each function using the numbers 47 and 7 and 
+# then prints the results of each function
+a = add(47, 7)
+print("47 + 7 = {}" .format(a))
+s = subtract(47, 7)
+print("47 - 7 = {}" .format(s))
+m = multiply(47, 7)
+print("47 * 7 = {}" .format(m))
+d = divide(47, 7)
+print("47 / 7 = {}" .format(d))
